@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root {
+  --border: rgb(205, 201, 201);
+  --navbar:#fff;
+  --hero-txt:#000;
+  --body:#fff;
+  --card:#fbf7f7;
+  --count:#ff5857;
+  --cart-btn:#fd164c;
+  --rating:#dd800e;
+  --sub-txt:#ff3838;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+::selection{
+    background-color: var(--cart-btn);
+    color:var(--navbar);
+}
+/* body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } */
